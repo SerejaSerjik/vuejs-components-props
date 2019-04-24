@@ -24,9 +24,9 @@ export default {
     'products': ProductsList,
     ProductDetails,
   },  
-  methods:{
+  methods: {
     viewDetails(product){
-      this.selectedProduct = product;
+      this.selectedProduct = product
     }
   }
 }

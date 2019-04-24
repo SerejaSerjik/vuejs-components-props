@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ProductItem v-for="(product, i) in products" :key="product.id" 
+        <ProductItem v-for="(product, i) in products" :key="product.id"
         :product="product" :index="(i+1)" @viewDetails="viewDetails"></ProductItem>
     </div>
 </template>
@@ -42,11 +42,11 @@
         components: {
             ProductItem
         },
-        methods:{
-           viewDetails(id){
+        methods: {
+            viewDetails(id){
                 let productToView = _.find(this.products, {id:id});
                 this.$emit("viewDetails", productToView);
-           } 
+            }
         }
     }
 </script>

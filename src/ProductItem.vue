@@ -17,7 +17,8 @@
             },
             index: {
                 type: Number,
-            }
+                default: 5
+            },
         },
         data(){
             return{
@@ -27,7 +28,7 @@
         },
         methods: {
             viewDetailsClicked(){
-                this.$emit("viewDetails",this.product.id);
+                this.$emit("viewDetails", this.product.id)
             }
         }
     }
